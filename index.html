@@ -8,8 +8,9 @@
 			<!--
 body {
 	background-color: #EFE0CC;
-	font-family: Geneva, Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	color: black;
+	font-family: Geneva, Helvetica, Arial, sans-serif;
+	font-size: 0.75em;
 	padding: 0px;
 	margin: 1em 1em 1em 1em;
 }
@@ -27,10 +28,6 @@ div.maincontent {
 	-moz-box-shadow: 10px 10px 30px -10px rgba(0,0,0,0.5);
 	box-shadow: 10px 10px 30px -10px rgba(0,0,0,0.5);
 	max-width: 1024px;
-}
-
-.floatright {
-	float: right;
 }
 
 div.pane {
@@ -92,6 +89,10 @@ p {
 	margin: 0px 0px 0.5em 0px;
 }
 
+p.profileitem {
+	margin: 0em 0px 1em 0px;
+}
+
 a {
 	color: #8F806C;
 }
@@ -103,6 +104,18 @@ a:hover {
 a:visited {
 	color: #6F604C;
 }
+
+.floatright {
+	float: right;
+}
+
+#dimmed {
+	color: #555555;
+}
+
+#slightlybigger {
+	font-size: 1.25em;
+}
 			-->
 		</style>
 	</head>
@@ -112,8 +125,9 @@ a:visited {
 			<h1>fwilleke80</h1>
 			<div class="floatright pane" width="320px">
 				<img class="floatright" src="fwilleke80.jpg" width="160px" alt="Frank Willeke" title="Frank Willeke" />
-				<p><strong>Frank Willeke</strong><br /><em>Software Developer</em><br />Berlin, Germany</p>
-				<p>Website:<br /><a href="https://www.frankwilleke.de">www.frankwilleke.de</a></p>
+				<p class="profileitem"><span id="slightlybigger"><strong>Frank Willeke</strong></span><br /><span id="dimmed"><em>Software Developer</em><br />Berlin, Germany</span></p>
+				<p class="profileitem">GitHub profile:<br /><a href="https://www.github.com/fwilleke80">GitHub.com/fwilleke80</a></p>
+				<p class="profileitem">Personal website:<br /><a href="https://www.frankwilleke.de">www.frankwilleke.de</a></p>
 			</div>
 			<h2>Welcome to my GitHub space!</h2>
 			<p>Here I publish the source code of almost all my free software projects for other people to learn from or approve upon it.</p>
