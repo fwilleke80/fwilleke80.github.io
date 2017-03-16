@@ -8,6 +8,10 @@ body {
 }
 
 img {
+	border: none;
+}
+
+img.userpic {
 	border: 1px solid black;
 }
 
